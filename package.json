@@ -1,0 +1,30 @@
+{
+  "name": "extra-project",
+  "version": "1.0.0",
+  "description": "example grunt project",
+  "main": "index.js",
+  "scripts": {
+    "test": "kodilla-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osmolski-lukasz/first-site.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Łukasz Osmólski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osmolski-lukasz/first-site/issues"
+  },
+  "homepage": "https://github.com/osmolski-lukasz/first-site#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
