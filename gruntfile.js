@@ -8,7 +8,7 @@ module.exports = function(grunt) {
   		},
   		dist: {
   			files: {
-  				'main.css': 'main.sass'
+  				'style.css': 'style.sass'
   			}
   		}
   	},
@@ -35,15 +35,19 @@ module.exports = function(grunt) {
     }
 
 	browserSync: {
-    	bsFiles: {
-        	src : 'assets/css/*.css'
-    	},
-    	options: {
-        	server: {
-        	    baseDir: "./"
-        	}
-    	}
-	}
+            dev: {
+                bsFiles: {
+                    src : [
+                        'app/css/*.css',
+                        'app/*.html'
+                    ]
+                },
+                options: {
+                    watchTask: true,
+                    server: './app'
+                }
+            }
+        }
 
   });
   // Load the plugins tasks 
@@ -54,5 +58,5 @@ module.exports = function(grunt) {
 
   // Default task(s).
   
-  grunt.registerTask('default', ['sass', 'imagemin', 'watch']);
+  grunt.registerTask('default', ['sass', 'imagemin', 'browserSync', 'watch']);
 };
