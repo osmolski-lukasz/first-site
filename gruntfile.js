@@ -22,7 +22,7 @@ module.exports = function(grunt) {
   				dest: 'images/build/'
   			}]
   		}
-  	}
+  	},
 
     watch: {
         scripts: {
@@ -32,14 +32,12 @@ module.exports = function(grunt) {
                 spawn: false,
             },
         } 
-    }
+    },
 
 	browserSync: {
             dev: {
                 bsFiles: {
-                    src : [
-                        '*.css',
-                    ]
+                    src : ['*.css',]
                 },
                 options: {
                     watchTask: true,
